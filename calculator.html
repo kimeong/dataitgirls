@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <h1>덧셈기</h1>
+  <style>input{font-size:1rem; width:300px;}</style>
+
+         <input type="button" value="calculate" 
+         onclick = "
+         left = Number(prompt('left?'));
+         right = Number(prompt('right?'));
+         alert(left+right);"> 
+<hr>
+<input id="l" type="text" placeholder="left"> +
+<input id="r" type="text" placeholder="right">
+<input type="button" value= "=" 
+onclick=" let 좌항= document.querySelector('#l').value;
+let 우항= document.querySelector('#r').value;
+alert(Number(좌항)+Number(우항));">
+
+<hr>
+<input id="l2" type="text" placeholder="left" onchange="
+좌항= document.querySelector('#l2').value;
+우항= document.querySelector('#r2').value;
+let 결과= Number(좌항) + Number(우항);
+document.querySelector('#result').value=결과;"> 
++
+<input id="r2" type="text" value="20" placeholder="right">
+=
+<input id="result" type="text">
+
+<script>
+function minus(){
+좌항= document.querySelector('#l3').value;
+우항= document.querySelector('#r3').value;
+let 결과2= Number(좌항) - Number(우항);
+document.querySelector('#result1').value=결과2;
+}
+</script>
+
+<hr>
+<input id="l3" type="text" placeholder="left" onchange="minus();">
+-
+<input id="r3" type="text" value="20" placeholder="right" onchange= "minus();">
+=
+<input id="result1" type="text">
+    </body>
+</html>
+
